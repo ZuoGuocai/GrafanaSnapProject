@@ -7,6 +7,7 @@ author: zuoguocai@126.com
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
+        // 您的邮箱服务器地址
         host: 'mail.exchangehost.com',
         port: 587,
         secure: false,
@@ -44,9 +45,12 @@ function sendMymail(who,subject,title){
         });
 }
 
+//测试用
 //sendMymail('zuoguocai@126.com','每周报表','OpenStack 运营报表')
 
 // 自定义发邮件模块，供引入
 exports.sendMymail = sendMymail;
-//const sendModule = require('./push.js');
+
+// 作为引入模块使用
+//const sendModule = require('./mailPush.js');
 //sendModule.sendMymail('zuoguocai@126.com','每周报表','OpenStack 运营报表');
