@@ -22,3 +22,5 @@ node getPicture.js
 chrome 扩展程序里安装 puppeteer recorder
 
 ```
+
+Tips：只是一种思路，代码写的并不好，大家可以进行扩展，比如截取kibana等的图表，增加异常处理，对图片id进行再次封装，集成到运维管理平台里
