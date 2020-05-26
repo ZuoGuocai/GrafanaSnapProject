@@ -9,7 +9,7 @@ function sendPicture(){
         // 引入自定义发邮件模块
         const sendModule = require('./mailPush.js');
         // 同时发送到多个邮箱,用逗号隔开
-        sendModule.sendMymail('guocai.zuo@gmail.com,zuoguocai@126.com','每周报表','^_^ Network 监控报表');
+        sendModule.sendMymail('guocai.zuo@gmail.com,zuoguocai@126.com','每周报表','^_^ OpenStack 监控报表');
 }
 
 
@@ -48,12 +48,12 @@ function getPicture(){
   	await page.screenshot({path: '/tmp/png/001.png'});
 
 
-  // 替换为您的grafana dashboard的 url
+     // 替换为您的grafana dashboard的 url
   	await page.goto('https://yourgrafana.com/d/-a3b-ddWz/hu-lian-wang-chu-kou-hui-zong?refresh=30s&orgId=1');
   	await page.waitFor(1000);
-  // 替换为您的grafana dashboard  panel 的编号,我这里是2
+     // 替换为您的grafana dashboard  panel 的编号,我这里是2
   	await page.waitForSelector('#panel-2 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
-  // 替换为您的grafana dashboard  panel 的编号,我这里是2
+     // 替换为您的grafana dashboard  panel 的编号,我这里是2
     await page.click('#panel-2 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
   	await page.waitForSelector('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
   	await page.click('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
@@ -67,4 +67,5 @@ function getPicture(){
 })();
 }
 
+// 调用定位并截图函数
 getPicture()
