@@ -41,7 +41,7 @@ function getPicture(){
     // 替换为您的grafana dashboard  panel 的编号,我这里是19
   	await page.waitForSelector('#panel-19 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
   	// 替换为您的grafana dashboard  panel 的编号,我这里是19
-    await page.click('#panel-19 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
+        await page.click('#panel-19 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
   	await page.waitForSelector('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
   	await page.click('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
   	await page.waitFor(1000);
@@ -54,7 +54,7 @@ function getPicture(){
      // 替换为您的grafana dashboard  panel 的编号,我这里是2
   	await page.waitForSelector('#panel-2 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
      // 替换为您的grafana dashboard  panel 的编号,我这里是2
-    await page.click('#panel-2 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
+        await page.click('#panel-2 > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-editor-container:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-height-helper:nth-child(1) > .panel-container:nth-child(1) .panel-menu-container:nth-child(3) > .fa:nth-child(1)')
   	await page.waitForSelector('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
   	await page.click('.open > .dropdown-menu > li:nth-child(1) > a > .dropdown-item-text')
   	await page.waitFor(1000);
