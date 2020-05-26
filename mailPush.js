@@ -6,6 +6,7 @@ author: zuoguocai@126.com
 
 const nodemailer = require('nodemailer');
 
+//定义您的邮件推送服务器
 let transporter = nodemailer.createTransport({
         // 您的邮箱服务器地址
         host: 'mail.exchangehost.com',
