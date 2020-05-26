@@ -1,6 +1,10 @@
 # GrafanaSnapProject
 
 
+通过 puppeteer 对 grafana  pannel 截图 并发送邮件报表
+
+
+#  使用
 ```
 
 cnpm i --save puppeteer
