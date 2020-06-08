@@ -27,10 +27,24 @@ Tips：只是一种思路，代码写的并不好，大家可以进行扩展，�
 
 # 补充
 
-由于代码是针对于 grafana 6的，最近更新到grafana 7.0 后，需要把源码的登陆部分更新为以下
+1. 由于代码是针对于 grafana 6的，最近更新到grafana 7.0 后，需要把源码的登陆部分更新为以下
 
 ```
 await page.type('input[name="user"]', account);
 await page.type('input[name="password"]', password);
 await page.click('button[class="css-y3nv3e-button"]');
+```
+
+2. 截图设置范围
+
+```
+await page.screenshot({
+        path: '/tmp/png/001.png',
+        clip: {
+          x: 0,
+          y: 0,
+          width: 1815,
+          height: 488
+        }
+        
 ```
